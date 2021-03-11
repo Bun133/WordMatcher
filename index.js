@@ -47,6 +47,7 @@ readline.question('何で始まる?', (start) => {
         console.log(`Filtered Length:${filtered.length}`)
         console.log(`Answer Length:${answer.length}`)
         let s = ""
+        s += `${start}で始まって${end}で終わる言葉一覧\n\n`
         answer.forEach((it)=>{
             s += `${it}\n`
         })
